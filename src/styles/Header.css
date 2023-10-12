@@ -1,0 +1,11 @@
+.ant-btn {
+  border: none;
+  box-shadow: none;
+}
+
+.ant-btn:focus,
+.ant-btn:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
