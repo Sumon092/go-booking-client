@@ -8,6 +8,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  background: -webkit-linear-gradient(to right, #4ca2cd, #67b26f);
-  background: linear-gradient(to right, #4ca2cd, #67b26f);
+  /* background: -webkit-linear-gradient(to right, #4ca2cd, #67b26f); */
+  /* background: linear-gradient(to right, #4ca2cd, #67b26f); */
 }

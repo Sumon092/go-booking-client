@@ -2,7 +2,7 @@ import { Button } from "antd";
 import { SizeType } from "antd/es/config-provider/SizeContext";
 import  { useState } from 'react';
 import { CarOutlined, PicRightOutlined, SmileOutlined, DingtalkOutlined } from '@ant-design/icons';
-import '../styles/Header.css'; // Import CSS for custom styling
+import '../styles/Header.css';
 
 const Header = () => {
     const [activeButton, setActiveButton] = useState('stays');
@@ -26,7 +26,8 @@ const Header = () => {
     };
 
     return (
-        <div className="flex mr-4 mt-8 ml-0">
+        <div className="pl-24 pt-8 header h-60">
+        <div className="flex ">
             <Button
                 type="default"
                 shape="round"
@@ -78,6 +79,12 @@ const Header = () => {
                 Airport Taxi
             </Button>
         </div>
+        <div>
+            <h1 className="text-6xl text-white font-bold mb-0">Find Your Next Stay</h1>
+            <h3 className="text-3xl mt-2 text-white font-light">Search less prices on hotel room and much more...</h3>
+        </div>
+        </div>
+        
     );
 };
 

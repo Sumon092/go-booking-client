@@ -9,3 +9,6 @@
   border: none;
   box-shadow: none;
 }
+.header {
+  background: linear-gradient(to right, #4ca2cd, #67b26f);
+}

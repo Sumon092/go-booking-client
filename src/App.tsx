@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <div className="pr-24 pl-24">
+    <div>
       <MainLayout/>
     </div>
     </>
