@@ -1,4 +1,5 @@
 import Header from "../component/Header";
+import Offers from "../component/Offers";
 import SearchFilter from "../component/SearchFilter";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div className="mt-0">
             <Header/>
             <SearchFilter/>
+            <Offers/>
         </div>
     );
 };
