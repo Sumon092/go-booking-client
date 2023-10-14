@@ -1,3 +1,4 @@
+import Destination from "../component/Destination";
 import Header from "../component/Header";
 import Offers from "../component/Offers";
 import SearchFilter from "../component/SearchFilter";
@@ -8,6 +9,7 @@ const Home = () => {
             <Header/>
             <SearchFilter/>
             <Offers/>
+            <Destination/>
         </div>
     );
 };
