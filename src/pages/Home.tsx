@@ -1,4 +1,5 @@
 import Destination from "../component/Destination";
+import Discount from "../component/Discount";
 import Explore from "../component/Explore";
 import Header from "../component/Header";
 import Offers from "../component/Offers";
@@ -12,6 +13,7 @@ const Home = () => {
             <Offers/>
             <Destination/>
             <Explore/>
+            <Discount/>
         </div>
     );
 };
