@@ -5,6 +5,9 @@ import Footer from "../component/Footer";
 import Header from "../component/Header";
 import Newsletter from "../component/NewsLetter";
 import Offers from "../component/Offers";
+import Reviews from "../component/Reviews";
+
+
 import SearchFilter from "../component/SearchFilter";
 
 const Home = () => {
@@ -16,6 +19,7 @@ const Home = () => {
             <Destination/>
             <Explore/>
             <Discount/>
+            <Reviews name="John Doe" comment="Great product!" stars={4} />
             <Newsletter/>
             <Footer/>
         </div>
