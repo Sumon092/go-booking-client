@@ -5,7 +5,7 @@ const Discount = () => {
       <div className="grid grid-cols-4 gap-4">
         <div className="bg-[#0690d4] p-3 rounded-lg h-20 flex flex-col justify-center text-white">
           <h2 className="mb-0">Genius</h2>
-          <p className="font-light">
+          <p className="font-light mt-1">
             Sumon, your are <strong>Genius level 1</strong>
             <br /> in our loyalty program
           </p>
@@ -15,7 +15,7 @@ const Discount = () => {
           style={{ border: "1px solid #0690d4" }}
         >
           <h2 className="mb-0 text-lg">10% discount on stay</h2>
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-600 text-sm mt-1">
             Enjoy discount at participating <br />
             properties worldwide
           </p>
@@ -24,10 +24,10 @@ const Discount = () => {
           className=" p-3 rounded-lg h-20 flex flex-col justify-center"
           style={{ border: "1px solid #0690d4" }}
         >
-          <h2 className="mb-0 text-lg">10% discount on stay</h2>
-          <p className="text-gray-600 text-sm">
-            Enjoy discount at participating <br />
-            properties worldwide
+          <h2 className="mb-0 text-lg">15% discount on car rental</h2>
+          <p className="text-gray-600 text-sm mt-1">
+            Save on select rental car <br/>
+            get 15% discount
           </p>
         </div>
         <div
@@ -35,7 +35,7 @@ const Discount = () => {
           style={{ background: "gray" }}
         >
           <h2 className="mb-0 text-lg">10% discount on stay</h2>
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-600 text-sm mt-1">
             Enjoy discount at participating <br />
             properties worldwide
           </p>
