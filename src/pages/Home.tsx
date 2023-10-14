@@ -19,7 +19,7 @@ const Home = () => {
             <Destination/>
             <Explore/>
             <Discount/>
-            <Reviews name="John Doe" comment="Great product!" stars={4} />
+            <Reviews  />
             <Newsletter/>
             <Footer/>
         </div>
