@@ -6,7 +6,9 @@ import Dest5 from "../assets/images/destination/khulna.jpg";
 
 const Destination = () => {
   return (
-    <div className="pl-24 pr-24 mb-8">
+    <div className="pl-24 pr-24 mt-12">
+        <h2 className="mb-0">Trending Destinations</h2>
+        <p className="text-gray-600 mt-0">Most popular choices for Travelers from Bangladesh</p>
       <div className="pr-1 grid grid-cols-2 gap-5">
         <div className="border-1 h-64 w-full relative">
           <img

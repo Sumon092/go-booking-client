@@ -4,7 +4,7 @@ import TourImage from "../assets/images/tour.jpeg";
 const Offers = () => {
   return (
     <>
-      <div className="pl-24 mb-0 mt-8">
+      <div className="pl-24 mb-0 mt-12">
         <h2 className="mb-0">Offers</h2>
         <p className="mt-0 text-gray-600">Promotions, deals and special offers for you</p>
       </div>
