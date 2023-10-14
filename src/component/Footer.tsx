@@ -5,7 +5,7 @@ export default function Footer() {
   const year = date.getFullYear();
 
   return (
-    <div className="bg-[#4ca2cd] text-white p-20 mt-16">
+    <div className="bg-[#4ca2cd] text-white p-20 mt-8">
       <div className="flex justify-between">
         
         <div className="flex gap-20">
