@@ -9,6 +9,7 @@ import Reviews from "../component/Reviews";
 
 
 import SearchFilter from "../component/SearchFilter";
+import UpcomingServicesList from "../component/UpcomingServiceLists";
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
             <Explore/>
             <Discount/>
             <Reviews  />
+            <UpcomingServicesList/>
             <Newsletter/>
             <Footer/>
         </div>
