@@ -1,0 +1,28 @@
+/* Define a CSS class for the neon border effect */
+.neon-border {
+    position: relative;
+  }
+  
+  
+  .neon-border::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #4ca2cd; /* Adjust border color as needed */
+    border-radius: 0.25rem; /* Adjust border radius as needed */
+  }
+  
+  .neon-border::before {
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+  
+  .neon-border::after {
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+  

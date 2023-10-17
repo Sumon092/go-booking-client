@@ -26,7 +26,6 @@ const UpcomingService: React.FC<UpcomingServiceProps> = ({
           <div className="text-gray-700 mb-2">Date: {date}</div>
           <div className="text-gray-700">Time: {time}</div>
         </div>
-        {/* Add any other text or buttons here */}
       </div>
     </div>
   );
