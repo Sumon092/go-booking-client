@@ -14,7 +14,7 @@ const Range: React.FC<IconSliderProps> = (props) => {
   Number(((max - min) / 2).toFixed(5));
 
   return (
-    <div className="mb-0 mt-3">
+    <div className="mb-0">
       <Card title="Your budget per night" bordered={false}>
         <Slider className="" {...props} onChange={setValue} value={value} />
         <div className="flex justify-start mb-0">
