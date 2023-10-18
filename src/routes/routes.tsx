@@ -5,6 +5,10 @@ import Register from '../pages/Register';
 import NotFound from '../pages/NotFound';
 import {createBrowserRouter} from 'react-router-dom'
 import Booking from '../pages/Booking';
+import Profile from '../component/Profile';
+import Dashboard from '../layout/Dashboard';
+import ManageUser from '../component/Dashboard/ManageUser';
+
 
 const routes = createBrowserRouter([
   {
@@ -29,6 +33,22 @@ const routes = createBrowserRouter([
     path: '/register',
     element: <Register />,
   },
+  {
+    path: '/dashboard',
+    element:<Dashboard/>,
+    children: [
+      {
+        path: 'user/profile',
+        element: <Profile />,
+      },
+      {
+        path: 'user/manage-user',
+        element: <ManageUser />,
+      },
+      
+    ]
+  },
+
   {
     path: '*',
     element: <NotFound />,
