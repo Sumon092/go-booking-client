@@ -2,7 +2,6 @@ import type { MenuProps } from "antd";
 import {
   ProfileOutlined,
   TableOutlined,
-  AppstoreOutlined,
 } from "@ant-design/icons";
 
 import { USER_ROLE } from "../constants/role";
@@ -24,12 +23,17 @@ export const sidebarItems = (role: string) => {
 
   const commonAdminSidebarItems: MenuProps["items"] = [
     {
-      label: <Link to={`/${role}/manage-student`}>Manage user</Link>,
+      label: <Link to={`/dashboard/${role}/manage-booking`}>Manage Booking</Link>,
+      icon: <TableOutlined />,
+      key: `/dashboard/${role}/manage-booking`,
+    },
+    {
+      label: <Link to={`/dashboard/${role}/manage-user`}>Manage user</Link>,
       icon: <TableOutlined />,
       key: `/${role}/manage-user`,
     },
     {
-      label: <Link to={`/${role}/manage-service`}>Manage service</Link>,
+      label: <Link to={`/dashboard/${role}/manage-service`}>Manage service</Link>,
       icon: <TableOutlined />,
       key: `/${role}/manage-service`,
     },
@@ -38,76 +42,7 @@ export const sidebarItems = (role: string) => {
   const adminSidebarItems: MenuProps["items"] = [
     ...defaultSidebarItems,
     ...commonAdminSidebarItems,
-    {
-      label: "Manage academic",
-      key: "manage-academic",
-      icon: <TableOutlined />,
-      children: [
-        {
-          label: <Link to={`/${role}/academic/faculty`}>Faculties</Link>,
-          key: `/${role}/academic/faculty`,
-        },
-        {
-          label: <Link to={`/${role}/academic/department`}>Departments</Link>,
-          key: `/${role}/academic/department`,
-        },
-        {
-          label: <Link to={`/${role}/academic/semester`}>Semesters</Link>,
-          key: `/${role}/academic/semester`,
-        },
-      ],
-    },
-    {
-      label: "Management",
-      key: "management",
-      icon: <AppstoreOutlined />,
-      children: [
-        {
-          label: <Link to={`/${role}/department`}>Department</Link>,
-          key: `/${role}/department`,
-        },
-        {
-          label: <Link to={`/${role}/building`}>Building</Link>,
-          key: `/${role}/building`,
-        },
-        {
-          label: <Link to={`/${role}/room`}>Rooms</Link>,
-          key: `/${role}/room`,
-        },
-        {
-          label: <Link to={`/${role}/course`}>Course</Link>,
-          key: `/${role}/course`,
-        },
-        {
-          label: (
-            <Link to={`/${role}/semester-registration`}>
-              Semester registration
-            </Link>
-          ),
-          key: `/${role}/semester-registration`,
-        },
-        {
-          label: <Link to={`/${role}/offered-course`}>Offered courses</Link>,
-          key: `/${role}/offered-course`,
-        },
-        {
-          label: (
-            <Link to={`/${role}/offered-course-section`}>
-              Course sections
-            </Link>
-          ),
-          key: `/${role}/offered-course-section`,
-        },
-        {
-          label: (
-            <Link to={`/${role}/offered-course-schedule`}>
-              Course schedules
-            </Link>
-          ),
-          key: `/${role}/offered-course-schedule`,
-        },
-      ],
-    },
+   
   ];
 
   const superAdminSidebarItems: MenuProps["items"] = [
@@ -118,19 +53,14 @@ export const sidebarItems = (role: string) => {
       icon: <TableOutlined />,
       key: `/${role}/manage-admin`,
     },
-    {
-      label: <Link to={`/${role}/manage-user`}>Manage User</Link>,
-      icon: <TableOutlined />,
-      key: `/${role}/manage-user`,
-    },
   ];
 
   const userSidebarItems: MenuProps["items"] = [
     ...defaultSidebarItems,
     {
-      label: <Link to={`/dashboard/${role}/manage-user`}>Manage user</Link>,
+      label: <Link to={`/dashboard/${role}/service-history`}>Service History</Link>,
       icon: <TableOutlined />,
-      key: `/${role}/manage-user`,
+      key: `/${role}/`,
     },
   ];
 

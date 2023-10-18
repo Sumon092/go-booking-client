@@ -8,8 +8,13 @@ import Booking from '../pages/Booking';
 import Profile from '../component/Profile';
 import Dashboard from '../layout/Dashboard';
 import ManageUser from '../component/Dashboard/ManageUser';
+import ManageBooking from '../component/Dashboard/ManageBooking';
+import ManageService from '../component/Dashboard/ManageService';
+import ServiceHistory from '../component/Dashboard/ServiceHistory';
+// import { getUserInfo } from '../services/authService';
 
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// const {role}=getUserInfo() as any
 const routes = createBrowserRouter([
   {
     path: '/',
@@ -38,12 +43,24 @@ const routes = createBrowserRouter([
     element:<Dashboard/>,
     children: [
       {
-        path: 'user/profile',
+        path: `${'user'}/profile`,
         element: <Profile />,
       },
       {
-        path: 'user/manage-user',
+        path: `${'admin'}/manage-user`,
         element: <ManageUser />,
+      },
+      {
+        path: `${'admin'}/manage-booking`,
+        element: <ManageBooking />,
+      },
+      {
+        path: `${'admin'}/manage-service`,
+        element: <ManageService />,
+      },
+      {
+        path: `${'user'}/service-history`,
+        element: <ServiceHistory />,
       },
       
     ]
