@@ -1,5 +1,4 @@
-# Super_Admin_Credential
+### Super_Admin_Credential
 
-## email: m.sumon@outlook.com
-
-## password: 123456
+- email: m.sumon@outlook.com
+- password: 123456
