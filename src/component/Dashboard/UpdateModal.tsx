@@ -8,7 +8,14 @@ interface ProfileUpdateFormProps {
   address: string;
 }
 
-const UpdateModal: React.FC = () => {
+interface UpdateModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const UpdateModal: React.FC<UpdateModalProps> = ({ isOpen, onClose }) => {
+  console.log(isOpen,onClose);
   const [open, setOpen] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
 
