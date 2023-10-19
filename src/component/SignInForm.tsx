@@ -15,7 +15,8 @@ export function SignInForm() {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
-  const handleSubmit = async (event) => {
+  
+  const handleSubmit = async (event: React.SyntheticEvent) => {
     event.preventDefault();
     setIsLoading(true);
 
@@ -73,7 +74,6 @@ export function SignInForm() {
               value="Login"
               className="bg-blue-400 font-bold text-white"
             />
-            
           </div>
         </form>
       </div>

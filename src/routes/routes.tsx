@@ -11,10 +11,10 @@ import ManageUser from '../component/Dashboard/ManageUser';
 import ManageBooking from '../component/Dashboard/ManageBooking';
 import ManageService from '../component/Dashboard/ManageService';
 import ServiceHistory from '../component/Dashboard/ServiceHistory';
-// import { getUserInfo } from '../services/authService';
+import { getUserInfo } from '../services/authService';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-// const {role}=getUserInfo() as any
+const {role}=getUserInfo() as any
 const routes = createBrowserRouter([
   {
     path: '/',
@@ -43,23 +43,23 @@ const routes = createBrowserRouter([
     element:<Dashboard/>,
     children: [
       {
-        path: `${'user'}/profile`,
+        path: `${role}/profile`,
         element: <Profile />,
       },
       {
-        path: `${'admin'}/manage-user`,
+        path: `${role}/manage-user`,
         element: <ManageUser />,
       },
       {
-        path: `${'admin'}/manage-booking`,
+        path: `${role}/manage-booking`,
         element: <ManageBooking />,
       },
       {
-        path: `${'admin'}/manage-service`,
+        path: `${role}/manage-service`,
         element: <ManageService />,
       },
       {
-        path: `${'user'}/service-history`,
+        path: `${role}/service-history`,
         element: <ServiceHistory />,
       },
       
