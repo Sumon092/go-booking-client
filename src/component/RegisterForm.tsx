@@ -83,7 +83,7 @@ export function RegisterForm({ className, ...props }: { className: any }) {
            
           </div>
           <Input
-            className="bg-blue-400 font-bold text-white"
+            className="bg-blue-400 font-bold text-white cursor-pointer"
             disabled={isLoading}
             value="Register"
             type="submit"

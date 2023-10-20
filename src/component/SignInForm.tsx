@@ -72,7 +72,7 @@ export function SignInForm() {
             <Input
               type="submit"
               value="Login"
-              className="bg-blue-400 font-bold text-white"
+              className="bg-blue-400 font-bold text-white cursor-pointer"
             />
           </div>
         </form>

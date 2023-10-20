@@ -1,4 +1,4 @@
-import { Menu,Layout } from "antd";
+import { Menu,Layout, Button } from "antd";
 const {  Sider } = Layout;
 
 import {useState}from 'react'
@@ -6,6 +6,7 @@ import {useState}from 'react'
 
 import { sidebarItems } from "./SidebarItems";
 import { getUserInfo } from "../services/authService";
+import { Link } from "react-router-dom";
 
 
   const SideBar = () => {
@@ -35,7 +36,9 @@ import { getUserInfo } from "../services/authService";
                 textAlign:'center',
                 fontWeight:'bold',
                 marginBottom:'1rem'
-            }}>GO</div>
+            }}><Link className="no-underline cursor-pointer" to="/">
+            <Button className="text-3xl font-bold cursor-pointer bg-black text-white">Go</Button>
+            </Link></div>
             <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" items={sidebarItems(role)} />
         </Sider>
     );
